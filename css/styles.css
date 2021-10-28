@@ -166,6 +166,7 @@ ul {
 .hero-button:hover,
 .hero-button:focus {
   color: var(--second-accent-color);
+  background-color: #188ce8;
 }
 
 /* Кнопки для портфолио */
