@@ -44,7 +44,7 @@ body {
 }
 
 ul {
-  /* padding: 0; */
+  padding: 0;
   margin: 0;
   list-style: none;
 }
@@ -133,9 +133,7 @@ ul {
 }
 .hero-title {
   margin-top: 0;
-  margin-bottom: 40px;
-
-  background-color: tomato; /*для оформления ерунды, потом удалить*/
+  margin-bottom: 30px;
 
   color: var(--second-accent-color);
   font-weight: 900;
@@ -146,7 +144,7 @@ ul {
   text-transform: uppercase;
 }
 .hero-button {
-  margin-bottom: 210px;
+  margin-bottom: 200px;
   border: 1px solid transparent; /*делает бордер прозрачным*/
   border-radius: 4px;
   padding: 10px 32px;
@@ -221,7 +219,8 @@ ul {
 
 .feature-list-text {
   margin-top: 0;
-  padding-top: 94px;
+  margin-bottom: 26px;
+  /* padding-top: 0; */
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -230,6 +229,7 @@ ul {
 }
 
 .feature-list-description {
+  margin-bottom: 0;
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 400;
@@ -241,7 +241,9 @@ ul {
 
 .section-title {
   margin-top: 0;
-  padding-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.1;
@@ -255,6 +257,9 @@ ul {
 }
 
 .team-title {
+  margin: 0 0 0 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.2;
@@ -263,7 +268,17 @@ ul {
   letter-spacing: 0.03em;
 }
 
+/* Секция паддинги и марджины */
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-description {
+  margin: 0 0 0 0;
+  padding-top: 10px;
+  padding-bottom: 30px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.2;
