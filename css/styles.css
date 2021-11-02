@@ -67,13 +67,29 @@ ul {
   list-style: none;
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  /* outline: 2px solid blue; */
+}
+/* HEADER */
+.header-border {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-section {
+  display: flex;
+  align-items: center;
+}
+
+/* НАВИГАЦИЯ */
+
 /* Логотип */
 .logo {
-  display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  /* width: 145px; */
   color: var(--accent-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -92,41 +108,14 @@ ul {
   color: #000000;
 }
 
-/* Навигация */
-
-/* .container-logo {
-  display: flex;
-  margin: 0;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  outline: 2px solid blue;
-} */
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-
-  /* outline: 2px solid blue; */
-}
-
-.container-nav {
-  display: flex;
+.nav {
   align-items: center;
+  display: flex;
 }
-/* .container-contacts {
-  margin-left: auto;
-  margin-right: auto;
-  width: 310px;
 
-  outline: 2px solid blue;
-} */
+.container-contacts {
+  margin-left: auto;
+}
 
 .site-nav {
   display: flex;
@@ -172,7 +161,6 @@ ul {
 
 /* Контакты в меню*/
 .contacts {
-  display: flex;
   margin-left: auto;
   align-items: center;
 }
@@ -203,9 +191,10 @@ ul {
   color: var(--accent-color);
 }
 
-/* Уникальный контент страницы */
+/* MAIN */
+
 /* Герой */
-/* Кнопка */
+/* Кнопка Герой */
 
 .hero {
   background-color: #2f303a;
@@ -214,14 +203,6 @@ ul {
   padding-right: 0;
   padding-bottom: 200px;
   padding-left: 0;
-}
-
-.hero-container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .hero-title {
@@ -264,45 +245,6 @@ ul {
   background-color: #188ce8;
 }
 
-/* Кнопки для портфолио */
-.container-button {
-  padding-top: 94px;
-
-  justify-content: center;
-  align-items: center;
-
-  width: 1200px;
-
-  /* display: flex;
-  flex-wrap: wrap; */
-
-  /* margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px; */
-
-  /* outline: 2px solid blue; */
-}
-
-.button-portfolio {
-  display: inline-block;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  padding: 6px 22px;
-  min-width: 73px;
-  margin-right: 8px;
-
-  background-color: var(--accent-color);
-  color: var(--second-accent-color);
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  text-align: center;
-  cursor: pointer;
-}
-
 .button {
   display: inline-block;
   border: 1px solid transparent;
@@ -332,16 +274,12 @@ ul {
 /* Преимущества */
 
 .features {
+  max-width: 270px;
+}
+
+.features:not(:last-child) {
   margin-right: 30px;
 }
-
-.features:nth-last-child(4n) {
-  margin-left: 0;
-}
-
-/* .feature-title {
-  background-color: tomato; /*для оформления ерунды, потом удалить
-} */
 
 .feature-list-text {
   margin-bottom: 10px;
@@ -355,7 +293,7 @@ ul {
 }
 
 .feature-list-description {
-  margin-top: o;
+  margin-top: 0;
   margin-bottom: 0;
 
   color: var(--primary-text-color);
@@ -367,13 +305,19 @@ ul {
 
 /* Примеры работ */
 
+.section-exapmles {
+  margin: 0;
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
   /* padding-top: 94px; */
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   text-align: center;
   font-weight: 700;
@@ -383,6 +327,7 @@ ul {
 
 .section-img {
   margin-left: 30px;
+  max-width: calc((100%-60px) / 3);
 }
 
 .section-img:nth-last-child(3n) {
@@ -398,6 +343,7 @@ ul {
 
 .team-img {
   margin-left: 30px;
+  max-width: calc((100%-90px) / 4);
 }
 
 .team-img:nth-last-child(4n) {
@@ -405,7 +351,9 @@ ul {
 }
 
 .team-container {
-  /* outline: 1px solid blue; */
+  padding-top: 10px;
+  padding-bottom: 30px;
+
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   margin-top: 0;
@@ -415,8 +363,8 @@ ul {
 
 .team-title {
   margin: 0 0 0 0;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 
   font-size: 16px;
   font-weight: 500;
@@ -435,8 +383,6 @@ ul {
 
 .section-description {
   margin: 0 0 0 0;
-  padding-top: 10px;
-  padding-bottom: 30px;
 
   color: var(--primary-text-color);
   font-size: 16px;
@@ -446,7 +392,7 @@ ul {
   letter-spacing: 0.03em;
 }
 
-/* Футер */
+/* ФУТЕР */
 
 .footer-container {
   margin-left: auto;
@@ -463,10 +409,6 @@ ul {
 }
 
 .logo-footer {
-  padding-bottom: 20px;
-  width: 145px;
-  height: 31px;
-
   color: var(--accent-color);
   font-family: Raleway, cursive;
   font-weight: 700;
@@ -498,6 +440,7 @@ ul {
 }
 
 .address-location {
+  margin-top: 0;
   color: var(--second-accent-color);
 }
 
@@ -523,9 +466,38 @@ ul {
   color: var(--second-accent-color);
 }
 
-/* Страница Портфолио */
+/* ПОРТФОЛИО */
+
+/* Кнопки для портфолио */
+.container-button {
+  padding-top: 94px;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 1200px;
+}
+
+.button-portfolio {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  margin-right: 8px;
+
+  background-color: var(--accent-color);
+  color: var(--second-accent-color);
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  text-align: center;
+  cursor: pointer;
+}
 
 /* Услуги компании */
+
 .service {
   /* background-color: turquoise; */
   margin-top: 50px;
@@ -547,6 +519,11 @@ ul {
 
 .text-decoration {
   text-decoration: none;
+}
+.service-border {
+  border: 1px solid #eeeeee;
+  border-top: 0;
+  padding: 20px 24px;
 }
 
 .service-title {

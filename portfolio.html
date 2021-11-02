@@ -18,20 +18,18 @@
 
     <body>
         <!-- Шапка сайта -->
-        <header>
-            <div class="container">
-                <nav class="container-nav">
-                    <a href="./index.html" class="logo"> Web<span class="nav-logo">Studio</span>
-                        <!-- ссылка на главную страницу -->
-                        <!-- <img src="./images/WebStudio.svg" alt="Логотип компании"> -->
-                    </a>
+    <header class="header-border">
+        <div class="container header-section">
+            <nav class="nav">
+                <a href="./index.html" class="logo"> Web<span class="nav-logo">Studio</span></a>
 
-                    <ul class="site-nav">
-                        <li class="item"><a href="./index.html" class="link">Студия</a></li>
-                        <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
-                        <li class="item"><a href="" class="link">Контакты</a></li>
-                    </ul>
-                </nav>
+                <!-- Навигация -->
+                <ul class="site-nav">
+                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class="item"><a href="" class="link">Контакты</a></li>
+                </ul>
+            </nav>
                 
                 <!-- Контакты в меню-->
                 <ul class="contacts">
@@ -44,11 +42,11 @@
         <!-- Контент страницы Портфолио -->
         <main>
             <section>
-                <h1 class="visually-hidden">Портфолио</h1>
-            </section>
-            
+                <div class="container">
+                    <h1 class="visually-hidden">Портфолио</h1>
+                        
             <!-- Фильтр -->
-            <div class="container">
+            
                 <ul class="container-button">
                     <li><button type="button" class="button-portfolio">Все</button></li>
                     <li><button type="button" class="button">Веб-сайты</button></li>
@@ -56,15 +54,14 @@
                     <li><button type="button" class="button">Дизайн</button></li>
                     <li><button type="button" class="button">Маркетинг</button></li>
                 </ul>
-            </div>
-            
+           
         <!-- Услуги компании -->
-            <div class="container">
+
                 <ul class="service">
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/technokryak.jpg" alt="Технокряк" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Технокряк</h2>
                                 <p class="service-description">Веб-сайт</p>
                             </div>
@@ -73,7 +70,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Постер New Orlean vs Golden Star</h2>
                                 <p class="service-description">Дизайн</p>
                             </div>
@@ -82,7 +79,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/seafood.jpg" alt="Ресторан Seafood" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Ресторан Seafood</h2>
                                 <p class="service-description">Приложение</p>
                             </div>
@@ -92,7 +89,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/prime.jpg" alt="Проект Prime" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Проект Prime</h2>
                             <p class="service-description">Маркетинг</p>
                             </div>
@@ -101,7 +98,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/boxes.jpg" alt="Проект Boxes" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Проект Boxes</h2>
                                 <p class="service-description">Приложение</p>
                             </div>
@@ -110,7 +107,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/inspiration.jpg" alt="Inspiration has no Borders" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Inspiration has no Borders</h2>
                                 <p class="service-description">Веб-сайт</p>
                             </div>
@@ -119,7 +116,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/limited.jpg" alt="Издание Limited Edition" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Издание Limited Edition</h2>
                                 <p class="service-description">Дизайн</p>
                             </div>
@@ -128,7 +125,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/lab.jpg" alt="Проект LAB" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Проект LAB</h2>
                                 <p class="service-description">Маркетинг</p>
                             </div>
@@ -137,7 +134,7 @@
                     <li class="service-main">
                         <a class="text-decoration" href="">
                             <img src="./images/business.jpg" alt="Growing Business" width="370">
-                            <div>
+                            <div class="service-border">
                                 <h2 class="service-title">Growing Business</h2>
                                 <p class="service-description">Приложение</p>
                             </div>
@@ -145,24 +142,24 @@
                     </li>
                 </ul>
             </div>
-            
-        </main>    
+        </section>
+    </main>    
 
-         <!-- Футер -->
+        <!-- Футер -->
         <footer class="footer-section">
             <div class="footer-container">
                 <a href="./index.html" class="logo-footer">Web<span class="footer-section-logo">Studio</span>
                     <!-- <img src="./images/WebStudio.svg" alt="Логотип компании"> -->
                 </a>
-
+        
                 <address class="address">
                     <p class="address-location">г. Киев, пр-т Леси Украинки, 26</p>
                     <a href="mailto:info@example.com" class="footer-section-contact">info@example.com</a>
                     <a href="tel:+380991111111" class="footer-section-contact">+38 099 111 11 11</a>
                 </address>
-
+        
             </div>
         </footer>
-    </body>
+    </body>        
 </html>
 
