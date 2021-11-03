@@ -508,7 +508,7 @@ ul {
   margin-bottom: 30px;
   margin-right: 30px;
   /* max-width: 370px; */
-  max-width: calc((100%-66px) / 3);
+  max-width: calc((100%-60px) / 3);
 }
 
 .service-main:nth-last-child(-n + 3) {
